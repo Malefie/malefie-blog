@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Malefie – Contact</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Inter:wght@300;500&display=swap');
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'EB Garamond', serif;
+      background-color: #f4f0ea;
+      color: #2b2b2b;
+      line-height: 1.7;
+      padding: 0;
+    }
+
+    nav {
+      background-color: #ffffff;
+      padding: 1.5rem 2rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    nav a {
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+      color: #2b2b2b;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #6c6a5f;
+    }
+
+    .contact-section {
+      max-width: 750px;
+      margin: 4rem auto;
+      padding: 2rem;
+      background-color: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.06);
+      position: relative;
+      text-align: center;
+    }
+
+    .contact-section::before {
+      content: "";
+      position: absolute;
+      top: -20px;
+      right: -20px;
+      width: 80px;
+      height: 80px;
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M20 80 C40 60 60 40 80 20" fill="none" stroke="#2b2b2b" stroke-width="2"/></svg>');
+      background-size: contain;
+      background-repeat: no-repeat;
+      opacity: 0.06;
+    }
+
+    .contact-section h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .contact-section p {
+      font-family: 'Inter', sans-serif;
+      font-size: 1.05rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .contact-section form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .contact-section input,
+    .contact-section textarea {
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+      padding: 0.8rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      outline: none;
+      transition: border-color 0.3s;
+    }
+
+    .contact-section input:focus,
+    .contact-section textarea:focus {
+      border-color: #6c6a5f;
+    }
+
+    .contact-section textarea {
+      resize: vertical;
+      min-height: 150px;
+    }
+
+    .contact-section button {
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+      padding: 0.8rem;
+      background-color: #2b2b2b;
+      color: #ffffff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .contact-section button:hover {
+      background-color: #6c6a5f;
+    }
+
+    .contact-details {
+      margin-top: 2rem;
+    }
+
+    .contact-details a {
+      color: #2b2b2b;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .contact-details a:hover {
+      color: #6c6a5f;
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 2rem;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.9rem;
+      color: #999;
+      background-color: #ffffff;
+      margin-top: 4rem;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .contact-section {
+        margin: 2rem 1rem;
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="shop.html">Shop</a></li>
+    </ul>
+  </nav>
+
+  <section class="contact-section">
+    <h1>Contact</h1>
+    <p>Reach out with your thoughts, questions, or just to say hello. I’d love to connect.</p>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <input type="text" name="name" placeholder="Name" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <textarea name="message" placeholder="Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <div class="contact-details">
+      <p>Email: <a href="mailto:hello@malefie.com">hello@malefie.com</a></p>
+      <p>Social: <a href="https://x.com/malefie">X</a> | <a href="#">Instagram</a></p>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Malefie – A soul in quiet bloom
+  </footer>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Malefie – Mindful Flow</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Inter:wght@300;500&display=swap');
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'EB Garamond', serif;
+      background-color: #f4f0ea;
+      color: #2b2b2b;
+      line-height: 1.7;
+      padding: 0;
+    }
+
+    nav {
+      background-color: #ffffff;
+      padding: 1.5rem 2rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    nav a {
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+      color: #2b2b2b;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #6c6a5f;
+    }
+
+    section.post {
+      max-width: 750px;
+      margin: 4rem auto;
+      padding: 2rem;
+      background-color: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.06);
+      position: relative;
+    }
+
+    section.post::before {
+      content: "";
+      position: absolute;
+      top: -20px;
+      right: -20px;
+      width: 80px;
+      height: 80px;
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M50 80 C60 60 40 40 50 20 C60 40 40 60 50 80" fill="none" stroke="#2b2b2b" stroke-width="2"/></svg>');
+      background-size: contain;
+      background-repeat: no-repeat;
+      opacity: 0.06;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-top: 0;
+    }
+
+    .date {
+      font-size: 0.95rem;
+      color: #8b8b8b;
+      margin-bottom: 1.2rem;
+    }
+
+    p {
+      font-family: 'Inter', sans-serif;
+      font-size: 1.05rem;
+      margin-bottom: 1.3rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 2rem;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.9rem;
+      color: #999;
+      background-color: #ffffff;
+      margin-top: 4rem;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      section.post {
+        margin: 2rem 1rem;
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="shop.html">Shop</a></li>
+    </ul>
+  </nav>
+
+  <section class="post">
+    <h1>Mindful Flow</h1>
+    <p class="date">April 6, 2023</p>
+    <p>In our fast-paced, constantly evolving world, it’s essential to find ways to anchor ourselves and cultivate a sense of inner peace. One powerful approach to achieving this balance is the practice of Mindful Flow. This holistic approach weaves together mindfulness and the state of flow, enabling individuals to tap into their inner reservoir of calm, focus, and creativity.</p>
+    <p>Mindfulness, rooted in ancient Eastern practices, is the art of paying attention to the present moment without judgment. It encourages individuals to fully engage with their thoughts, emotions, and physical sensations, fostering awareness and self-compassion. By embracing mindfulness, one can develop a deeper understanding of their internal landscape, leading to greater mental clarity and emotional stability.</p>
+    <p>Flow, on the other hand, is a psychological state where one becomes completely absorbed in an activity, experiencing a sense of oneness and harmony. Coined by psychologist Mihaly Csikszentmihalyi, flow occurs when an individual’s skill level perfectly aligns with the challenge at hand, creating an optimal balance between effort and reward. This state can lead to heightened creativity, productivity, and personal satisfaction.</p>
+    <p>Mindful Flow is the harmonious fusion of these two powerful concepts. By integrating mindfulness into flow experiences, individuals can amplify their focus, presence, and enjoyment in any task they undertake. This dynamic synergy helps to create a sense of wholeness and connection, as practitioners cultivate a heightened awareness of their surroundings and an appreciation for the present moment.</p>
+    <p>To experience Mindful Flow, it is essential to cultivate a practice of mindfulness through activities such as meditation, deep breathing, or yoga. As one becomes more adept at remaining present, it becomes easier to transition into a flow state during challenging tasks. By maintaining a balance between skill and challenge, individuals can unlock the limitless potential of Mindful Flow, tapping into a wellspring of creativity, focus, and tranquility.</p>
+  </section>
+
+  <footer>
+    © 2025 Malefie – A soul in quiet bloom
+  </footer>
+</body>
+</html>

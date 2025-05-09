@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Malefie – Blog</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Inter:wght@300;500&display=swap');
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'EB Garamond', serif;
+      background-color: #f4f0ea;
+      color: #2b2b2b;
+      line-height: 1.7;
+      padding: 0;
+    }
+
+    nav {
+      background-color: #ffffff;
+      padding: 1.5rem 2rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    nav a {
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+      color: #2b2b2b;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #6c6a5f;
+    }
+
+    .blog-preview {
+      max-width: 1200px;
+      margin: 4rem auto;
+      padding: 0 2rem;
+    }
+
+    .blog-preview h1 {
+      font-size: 3rem;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .blog-preview h2 {
+      font-size: 2rem;
+      margin: 3rem 0 1.5rem;
+      text-align: center;
+      color: #2b2b2b;
+    }
+
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .blog-card {
+      background-color: #ffffff;
+      border-radius: 16px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+      transition: transform 0.3s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .blog-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .blog-card svg {
+      width: 100%;
+      height: 150px;
+      margin-bottom: 1rem;
+    }
+
+    .blog-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .blog-card .date {
+      font-size: 0.9rem;
+      color: #8b8b8b;
+      margin-bottom: 1rem;
+    }
+
+    .blog-card p {
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+      color: #2b2b2b;
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 2rem;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.9rem;
+      color: #999;
+      background-color: #ffffff;
+      margin-top: 4rem;
+    }
+
+    @media (max-width: 768px) {
+      .blog-preview h1 {
+        font-size: 2.5rem;
+      }
+
+      .blog-preview h2 {
+        font-size: 1.8rem;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .blog-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="shop.html">Shop</a></li>
+    </ul>
+  </nav>
+
+  <section class="blog-preview">
+    <h1>All Musings</h1>
+
+    <h2>Self-Reflective Musings</h2>
+    <div class="blog-grid">
+      <div class="blog-card">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 80 C40 60 60 40 80 20" fill="none" stroke="#2b2b2b" stroke-width="2"/>
+        </svg>
+        <h3>30</h3>
+        <p class="date">May 9, 2025</p>
+        <p>Today, I turn 30. A quiet pulse of time moving forward.</p>
+        <p><a href="blog-post.html">Read More</a></p>
+      </div>
+      <div class="blog-card">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 80 C40 60 60 40 80 20" fill="none" stroke="#2b2b2b" stroke-width="2"/>
+        </svg>
+        <h3>A Self-Reminder: Trust the Flow</h3>
+        <p class="date">March 31, 2025</p>
+        <p>A note to embrace presence over planning and let life unfold.</p>
+        <p><a href="blog-post-trust-the-flow.html">Read More</a></p>
+      </div>
+      <div class="blog-card">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <path d="M50 20 L50 80 M40 30 L40 70 M60 30 L60 70" fill="none" stroke="#2b2b2b" stroke-width="2"/>
+        </svg>
+        <h3>The Poetry of Rain: Chaos, Stillness, and Becoming</h3>
+        <p class="date">March 22, 2025</p>
+        <p>Reflecting on the storm’s renewal and life’s rhythms.</p>
+        <p><a href="blog-post-poetry-of-rain.html">Read More</a></p>
+      </div>
+    </div>
+
+    <h2>Philosophical/Whimsical Musings</h2>
+    <div class="blog-grid">
+      <div class="blog-card">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="50" cy="50" r="40" fill="none" stroke="#2b2b2b" stroke-width="2"/>
+        </svg>
+        <h3>Shunyata: The Universe of Nothingness</h3>
+        <p class="date">April 20, 2025</p>
+        <p>Contemplating a boundless void where existence finds its roots.</p>
+        <p><a href="blog-post-shunyata.html">Read More</a></p>
+      </div>
+      <div class="blog-card">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="60" cy="50" r="30" fill="none" stroke="#2b2b2b" stroke-width="2"/>
+          <circle cx="40" cy="50" r="30" fill="none" stroke="#2b2b2b" stroke-width="2"/>
+        </svg>
+        <h3>RuShams: The Eternal Dance of Love and Light</h3>
+        <p class="date">March 22, 2025</p>
+        <p>Exploring the transcendent love between Rumi and Shams.</p>
+        <p><a href="blog-post-rushams.html">Read More</a></p>
+      </div>
+      <div class="blog-card">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 80 L50 50 L80 80 M20 20 L50 50 L80 20" fill="none" stroke="#2b2b2b" stroke-width="2"/>
+        </svg>
+        <h3>Puzzles of Possibility: Finding Ourselves in ‘The Midnight Library’</h3>
+        <p class="date">July 29, 2024</p>
+        <p>Reflecting on life’s choices through Nora Seed’s alternate lives.</p>
+        <p><a href="blog-post-midnight-library.html">Read More</a></p>
+      </div>
+      <div class="blog-card">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <path d="M50 80 C60 60 40 40 50 20 C60 40 40 60 50 80" fill="none" stroke="#2b2b2b" stroke-width="2"/>
+        </svg>
+        <h3>Mindful Flow</h3>
+        <p class="date">April 6, 2023</p>
+        <p>Exploring the synergy of mindfulness and flow for inner peace.</p>
+        <p><a href="blog-post-mindful-flow.html">Read More</a></p>
+      </div>
+      <div class="blog-card">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <path d="M50 80 C70 80 70 20 50 20 C30 20 30 80 50 80" fill="none" stroke="#2b2b2b" stroke-width="2"/>
+        </svg>
+        <h3>The Infamous Cycle</h3>
+        <p class="date">February 2, 2022</p>
+        <p>Reflecting on life’s cycle through atoms and energy exchange.</p>
+        <p><a href="blog-post-infamous-cycle.html">Read More</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Malefie – A soul in quiet bloom
+  </footer>
+</body>
+</html>

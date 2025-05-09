@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Malefie – Reflections & Musings</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Inter:wght@300;500&display=swap');
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'EB Garamond', serif;
+      background-color: #f4f0ea;
+      color: #2b2b2b;
+      line-height: 1.7;
+      padding: 0;
+    }
+
+    nav {
+      background-color: #ffffff;
+      padding: 1.5rem 2rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    nav a {
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+      color: #2b2b2b;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #6c6a5f;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+      background-color: #ffffff;
+      margin: 2rem auto;
+      max-width: 1200px;
+      position: relative;
+      border-radius: 16px;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: -30px;
+      right: -30px;
+      width: 100px;
+      height: 100px;
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M50 20 C65 20 80 35 80 50 C80 65 65 80 50 80 C35 80 20 65 20 50 C20 35 35 20 50 20" fill="none" stroke="#2b2b2b" stroke-width="2"/></svg>');
+      background-size: contain;
+      opacity: 0.1;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero p {
+      font-family: 'Inter', sans-serif;
+      font-size: 1.2rem;
+      color: #6c6a5f;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .featured-post {
+      max-width: 750px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background-color: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.06);
+      position: relative;
+    }
+
+    .featured-post h2 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .featured-post .date {
+      font-size: 0.95rem;
+      color: #8b8b8b;
+      margin-bottom: 1.2rem;
+    }
+
+    .featured-post p {
+      font-family: 'Inter', sans-serif;
+      font-size: 1.05rem;
+      margin-bottom: 1rem;
+    }
+
+    .blog-preview {
+      max-width: 1200px;
+      margin: 4rem auto;
+      padding: 0 2rem;
+    }
+
+    .blog-preview h2 {
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .blog-card {
+      background-color: #ffffff;
+      border-radius: 16px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+      transition: transform 0.3s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .blog-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .blog-card svg {
+      width: 100%;
+      height: 150px;
+      margin-bottom: 1rem;
+    }
+
+    .blog-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .blog-card .date {
+      font-size: 0.9rem;
+      color: #8b8b8b;
+      margin-bottom: 1rem;
+    }
+
+    .blog-card p {
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+      color: #2b2b2b;
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 2rem;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.9rem;
+      color: #999;
+      background-color: #ffffff;
+      margin-top: 4rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .blog-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="shop.html">Shop</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <h1>Malefie</h1>
+    <p>Fragments of becoming – reflections, musings & soulful pauses</p>
+  </section>
+
+  <section class="featured-post">
+    <h2>30</h2>
+    <p class="date">May 9, 2025</p>
+    <p>Today, I turn 30. No loud fireworks, no profound transformation. Just a quiet pulse of time moving forward. A soft exhale.</p>
+    <p><a href="blog-post.html">Read More</a></p>
+  </section>
+
+  <section class="blog-preview">
+    <h2>Recent Musings</h2>
+    <div class="blog-grid">
+      <div class="blog-card">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 80 C40 60 60 40 80 20" fill="none" stroke="#2b2b2b" stroke-width="2"/>
+        </svg>
+        <h3>Stillness</h3>
+        <p class="date">April 15, 2025</p>
+        <p>Embracing the pause between moments, where clarity blooms.</p>
+      </div>
+      <div class="blog-card">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="50" cy="50" r="30" fill="none" stroke="#2b2b2b" stroke-width="2"/>
+        </svg>
+        <h3>Roots</h3>
+        <p class="date">March 22, 2025</p>
+        <p>Finding strength in the unseen, beneath the surface.</p>
+      </div>
+      <div class="blog-card">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <path d="M30 70 L50 30 L70 70" fill="none" stroke="#2b2b2b" stroke-width="2"/>
+        </svg>
+        <h3>Horizon</h3>
+        <p class="date">February 10, 2025</p>
+        <p>Chasing the line where dreams meet reality.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Malefie – A soul in quiet bloom
+  </footer>
+</body>
+</html>
