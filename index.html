@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Malefie – Reflections & Musings</title>
+  <title>Malefie – A soul in quiet bloom</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Inter:wght@300;500&display=swap');
 
@@ -54,63 +54,26 @@
     .hero {
       text-align: center;
       padding: 4rem 2rem;
-      background-color: #ffffff;
-      margin: 2rem auto;
-      max-width: 1200px;
-      position: relative;
-      border-radius: 16px;
+      max-width: 800px;
+      margin: 0 auto;
     }
 
-    .hero::before {
-      content: "";
-      position: absolute;
-      top: -30px;
-      right: -30px;
+    .hero svg {
       width: 100px;
       height: 100px;
-      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M50 20 C65 20 80 35 80 50 C80 65 65 80 50 80 C35 80 20 65 20 50 C20 35 35 20 50 20" fill="none" stroke="#2b2b2b" stroke-width="2"/></svg>');
-      background-size: contain;
-      opacity: 0.1;
+      margin-bottom: 1rem;
     }
 
     .hero h1 {
-      font-size: 3.5rem;
-      margin-bottom: 0.5rem;
+      font-size: 3rem;
+      margin-bottom: 1rem;
     }
 
     .hero p {
       font-family: 'Inter', sans-serif;
       font-size: 1.2rem;
-      color: #6c6a5f;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-
-    .featured-post {
-      max-width: 750px;
-      margin: 2rem auto;
-      padding: 2rem;
-      background-color: #ffffff;
-      border-radius: 16px;
-      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.06);
-      position: relative;
-    }
-
-    .featured-post h2 {
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
-    }
-
-    .featured-post .date {
-      font-size: 0.95rem;
-      color: #8b8b8b;
-      margin-bottom: 1.2rem;
-    }
-
-    .featured-post p {
-      font-family: 'Inter', sans-serif;
-      font-size: 1.05rem;
-      margin-bottom: 1rem;
+      color: #2b2b2b;
+      margin-bottom: 2rem;
     }
 
     .blog-preview {
@@ -120,9 +83,10 @@
     }
 
     .blog-preview h2 {
-      font-size: 2.5rem;
+      font-size: 2rem;
       text-align: center;
-      margin-bottom: 2rem;
+      margin: 3rem 0 1.5rem;
+      color: #2b2b2b;
     }
 
     .blog-grid {
@@ -168,6 +132,24 @@
       color: #2b2b2b;
     }
 
+    .view-all {
+      text-align: center;
+      margin: 2rem 0;
+    }
+
+    .view-all a {
+      font-family: 'Inter', sans-serif;
+      font-size: 1.1rem;
+      color: #2b2b2b;
+      text-decoration: none;
+      border-bottom: 1px solid #2b2b2b;
+      transition: color 0.3s;
+    }
+
+    .view-all a:hover {
+      color: #6c6a5f;
+    }
+
     footer {
       text-align: center;
       padding: 3rem 2rem;
@@ -181,6 +163,14 @@
     @media (max-width: 768px) {
       .hero h1 {
         font-size: 2.5rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+
+      .blog-preview h2 {
+        font-size: 1.8rem;
       }
 
       nav ul {
@@ -206,44 +196,97 @@
   </nav>
 
   <section class="hero">
+    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="50" cy="50" r="45" fill="none" stroke="#2b2b2b" stroke-width="2"/>
+    </svg>
     <h1>Malefie</h1>
-    <p>Fragments of becoming – reflections, musings & soulful pauses</p>
-  </section>
-
-  <section class="featured-post">
-    <h2>30</h2>
-    <p class="date">May 9, 2025</p>
-    <p>Today, I turn 30. No loud fireworks, no profound transformation. Just a quiet pulse of time moving forward. A soft exhale.</p>
-    <p><a href="blog-post.html">Read More</a></p>
+    <p>A soul in quiet bloom, weaving reflections on life, love, and the cosmos.</p>
   </section>
 
   <section class="blog-preview">
-    <h2>Recent Musings</h2>
+    <h2>Self-Reflective Musings</h2>
     <div class="blog-grid">
       <div class="blog-card">
         <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
           <path d="M20 80 C40 60 60 40 80 20" fill="none" stroke="#2b2b2b" stroke-width="2"/>
         </svg>
-        <h3>Stillness</h3>
-        <p class="date">April 15, 2025</p>
-        <p>Embracing the pause between moments, where clarity blooms.</p>
+        <h3>30</h3>
+        <p class="date">May 9, 2025</p>
+        <p>Today, I turn 30. A quiet pulse of time moving forward.</p>
+        <p><a href="blog-post.html">Read More</a></p>
       </div>
       <div class="blog-card">
         <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="50" cy="50" r="30" fill="none" stroke="#2b2b2b" stroke-width="2"/>
+          <path d="M20 80 C40 60 60 40 80 20" fill="none" stroke="#2b2b2b" stroke-width="2"/>
         </svg>
-        <h3>Roots</h3>
+        <h3>A Self-Reminder: Trust the Flow</h3>
+        <p class="date">March 31, 2025</p>
+        <p>A note to embrace presence over planning and let life unfold.</p>
+        <p><a href="blog-post-trust-the-flow.html">Read More</a></p>
+      </div>
+      <div class="blog-card">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <path d="M50 20 L50 80 M40 30 L40 70 M60 30 L60 70" fill="none" stroke="#2b2b2b" stroke-width="2"/>
+        </svg>
+        <h3>The Poetry of Rain: Chaos, Stillness, and Becoming</h3>
         <p class="date">March 22, 2025</p>
-        <p>Finding strength in the unseen, beneath the surface.</p>
+        <p>Reflecting on the storm’s renewal and life’s rhythms.</p>
+        <p><a href="blog-post-poetry-of-rain.html">Read More</a></p>
+      </div>
+    </div>
+
+    <h2>Philosophical/Whimsical Musings</h2>
+    <div class="blog-grid">
+      <div class="blog-card">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="50" cy="50" r="40" fill="none" stroke="#2b2b2b" stroke-width="2"/>
+        </svg>
+        <h3>Shunyata: The Universe of Nothingness</h3>
+        <p class="date">April 20, 2025</p>
+        <p>Contemplating a boundless void where existence finds its roots.</p>
+        <p><a href="blog-post-shunyata.html">Read More</a></p>
       </div>
       <div class="blog-card">
         <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-          <path d="M30 70 L50 30 L70 70" fill="none" stroke="#2b2b2b" stroke-width="2"/>
+          <circle cx="60" cy="50" r="30" fill="none" stroke="#2b2b2b" stroke-width="2"/>
+          <circle cx="40" cy="50" r="30" fill="none" stroke="#2b2b2b" stroke-width="2"/>
         </svg>
-        <h3>Horizon</h3>
-        <p class="date">February 10, 2025</p>
-        <p>Chasing the line where dreams meet reality.</p>
+        <h3>RuShams: The Eternal Dance of Love and Light</h3>
+        <p class="date">March 22, 2025</p>
+        <p>Exploring the transcendent love between Rumi and Shams.</p>
+        <p><a href="blog-post-rushams.html">Read More</a></p>
       </div>
+      <div class="blog-card">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 80 L50 50 L80 80 M20 20 L50 50 L80 20" fill="none" stroke="#2b2b2b" stroke-width="2"/>
+        </svg>
+        <h3>Puzzles of Possibility: Finding Ourselves in ‘The Midnight Library’</h3>
+        <p class="date">July 29, 2024</p>
+        <p>Reflecting on life’s choices through Nora Seed’s alternate lives.</p>
+        <p><a href="blog-post-midnight-library.html">Read More</a></p>
+      </div>
+      <div class="blog-card">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <path d="M50 80 C60 60 40 40 50 20 C60 40 40 60 50 80" fill="none" stroke="#2b2b2b" stroke-width="2"/>
+        </svg>
+        <h3>Mindful Flow</h3>
+        <p class="date">April 6, 2023</p>
+        <p>Exploring the synergy of mindfulness and flow for inner peace.</p>
+        <p><a href="blog-post-mindful-flow.html">Read More</a></p>
+      </div>
+      <div class="blog-card">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <path d="M50 80 C70 80 70 20 50 20 C30 20 30 80 50 80" fill="none" stroke="#2b2b2b" stroke-width="2"/>
+        </svg>
+        <h3>The Infamous Cycle</h3>
+        <p class="date">February 2, 2022</p>
+        <p>Reflecting on life’s cycle through atoms and energy exchange.</p>
+        <p><a href="blog-post-infamous-cycle.html">Read More</a></p>
+      </div>
+    </div>
+
+    <div class="view-all">
+      <a href="blog.html">View All Posts</a>
     </div>
   </section>
 
